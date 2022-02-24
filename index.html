@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pernikahan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="src/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="src/assets/My_Heart_Dances_NCS_NOCOPYRIGHT_SOUND_I_Judson_Lee.mp3" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+    <link href="src/css/style.css" rel="stylesheet" />
+    <link href="src/css/lightbox.css" rel="stylesheet" />
+    <style>
+        .button-audio {
+            position: fixed;
+            bottom: 78px;
+            right: 0;
+            z-index: 1;
+            background: transparent;
+            border-radius: 800px;
+        }
+
+        .button-audio:hover {
+            background: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Bottom Nav Bar -->
+    <nav class="navbar navbar-dark bg-light navbar-expand fixed-bottom">
+        <div style="width:100%; margin:auto;">
+            <ul class="navbar-nav nav-justified w-100 nav-width m-auto">
+                <li class="nav-item">
+                    <a class="navlink" href="#home">
+                        <img class="img-fluid nav-logo" src="src/assets/navbar/ic-home.svg"><br>Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="navlink" href="#couple">
+                        <img class="img-fluid nav-logo" src="src/assets/navbar/ic-happy-copule.svg"><br>Couple
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="navlink" href="#event">
+                        <img class="img-fluid nav-logo" src="src/assets/navbar/ic-event.svg"><br>Event
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="navlink" href="#gallery">
+                        <img class="img-fluid nav-logo" src="src/assets/navbar/ic-gallery.svg"><br>Gallery
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="navlink" href="#story">
+                        <img class="img-fluid nav-logo" src="src/assets/navbar/ic-wish.svg"><br>Story
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Bottom Nav Bar -->
+
+    <!-- Audio -->
+    <audio type="audio/wav" id="player" loop>
+        <source src="src/assets/My_Heart_Dances_NCS_NOCOPYRIGHT_SOUND_I_Judson_Lee.mp3" type="audio/mp3">
+    </audio>
+    <button id="playbutton" class="button-main button-audio m-3"><img src="src/assets/btn-pause.png"></button>
+    <script>
+        var audio = document.getElementById("player");
+        audio.volume = 0.2;
+        audio.autoplay = false;
+    </script>
+    <!-- Audio -->
+
+    <!-- Modal Laman Awal -->
+    <div class="modalh" id="modalawal" tabindex="-1">
+        <div class="bg-first">
+            <div class="bg-first-1 h-100">
+                <div class="card h-100 justify-content-center" style="background-color:transparent; border:transparent">
+                    <h5 class="text-center manrope" style="font-weight: 700;">Official Wedding Website
+                    </h5>
+                    <h1 class="text-center sunnday">Pria & Wanita</h1>
+                    <p id="tamu" class="pb-0 mb-0 text-center manrope" style="font-weight: 700;">
+                        Kepada Tamu yang Terhormat,
+                    </p>
+                    <p class="pt-0 mt-0 text-center" style="font-family: 'Manrope';">
+                        Kami mengundang anda untuk merayakan pernikahan kami
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <button id="modalbutton" class="button-modal mt-3">
+                            Buka Undangan
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Laman Awal -->
+
+    <!-- Main Content -->
+    <div class="main">
+        <div class="container">
+            <!-- Home -->
+            <img id="home" class="img-fluid leaves m-auto" style="display: block;" src="src/assets/Header_flower.svg">
+            <div class="card main-container home mx-auto my-4" style="border:transparent">
+                <img class="img-fluid card-img" src="src/assets/Home/Home photo.png">
+                <div class="w-100 h-100 home-overlay text-center"></div>
+                <div class="home-text text-center">
+                    <h4 class="mb-0">We Are Getting Married</h4>
+                    <h1 class="sunnday mt-0 mb-5">Pria & Wanita</h1>
+                </div>
+            </div>
+            <img class="img-fluid leaves mx-auto mb-5 pb-3" style="display: block;" src="src/assets/Footer_flower.svg">
+            <!-- Home -->
+
+            <!-- Happy Couple -->
+            <img class="img-fluid leaves mx-auto mt-5 pt-3" style="display: block;" src="src/assets/Header_flower.svg">
+            <div id="couple" class="mx-auto my-4 px-3 py-3 main-container" style="display: block;">
+                <div class="row">
+                    <div class="col">
+                        <img class="img-fluid flower" src="src/assets/Flower top left.png">
+                    </div>
+                    <div class="col align-content-end">
+                        <img class="img-fluid flower float-right" src="src/assets/Flower top right.png">
+                    </div>
+                </div>
+                <!-- Content -->
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <h1 class="text-center sunnday">Happy Couples</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-4 m-0 p-0 text-center">
+                                <div class="ava-couple mx-auto"
+                                    style="background-image: url('src/assets/happy-couples/ava-male.png');"></div>
+                                <h4 class="text-ava">Nama Pria Panjang</h4>
+                                <p class="body">Putra Ke-X dari Bapak xyz<br>dan Ibu abc</p>
+                            </div>
+                            <div class="col-12 col-lg-4 text-center">
+                                <p class="playfair" style="font-size: 96px;">&</p>
+                                <h4>Are Getting Married<br>on 27 January 2021</h4>
+                            </div>
+                            <div class="col-12 col-lg-4 text-center">
+                                <div class="ava-couple ava-wanita mx-auto"
+                                    style="background-image: url('src/assets/happy-couples/ava-female.png');"></div>
+                                <h4 class="text-ava">Nama Wanita Panjang</h4>
+                                <p class="body">Putri Ke-X dari Bapak xyz<br>dan Ibu abc</p>
+                            </div>
+                        </div>
+                        <div id="theday" style="display:none">
+                            <h1 class="text-center sunnday">Today is the day!</h1>
+                        </div>
+                        <div class="row">
+                            <div id="countdown" class="col text-center">
+                                <p class="mb-0 sunnday" style="font-size: 48px;">Menghitung Hari:</p>
+                                <div class="row countdown-container m-auto">
+                                    <div class="col">
+                                        <h1 id="hari" class="m-auto sunnday">29 </h1>
+                                    </div>
+                                    <div class="col">
+                                        <h1 id="jam" class="m-auto sunnday"> 10 </h1>
+                                    </div>
+                                    <div class="col">
+                                        <h1 id="menit" class="m-auto sunnday"> 59 </h1>
+                                    </div>
+                                    <div class="col">
+                                        <h1 id="detik" class="m-auto sunnday"> 00</h1>
+                                    </div>
+                                </div>
+                                <div class="row countdown-container m-auto">
+                                    <div class="col">
+                                        <p class="body">Hari</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="body">Jam</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="body">Menit</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="body">Detik</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content -->
+                <div class="row">
+                    <div class="col">
+                        <img class="img-fluid flower" src="src/assets/Flower top left.png">
+                    </div>
+                    <div class="col align-content-end">
+                        <img class="img-fluid flower float-right" src="src/assets/Flower top right.png">
+                    </div>
+                </div>
+            </div>
+            <img class="img-fluid leaves mb-5 pb-3 m-auto" style="display: block;" src="src/assets/Footer_flower.svg">
+            <!-- Happy Couple -->
+
+            <!-- When & Where -->
+            <img class="img-fluid leaves mx-auto mt-5 pt-3" style="display: block;" src="src/assets/Header_flower.svg">
+            <div id="event" class="mx-auto my-4 px-3 py-3 main-container" style="display: block;">
+                <div class="row">
+                    <div class="col">
+                        <img class="img-fluid flower" src="src/assets/Flower top left.png">
+                    </div>
+                    <div class="col align-content-end">
+                        <img class="img-fluid flower float-right" src="src/assets/Flower top right.png">
+                    </div>
+                </div>
+                <!-- Content -->
+                <div class="row m-3">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <h1 class="text-center sunnday mb-0">When & Where</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-6 mt-3">
+                                <div class="card card-event p-3">
+                                    <div class="card-event-img"
+                                        style="background-image: url('src/assets/Event/shardayyy-photography-fJzmPe-a0eU-unsplash.jpg');">
+                                    </div>
+                                    <div class="card-body px-0">
+                                        <h4>Akad Nikah</h4>
+                                        <p class="body m-0">Rabu, 27 Januari 2021 pukul 13.00 - 14.00 WIB
+                                            <br>di Favehotel Tasikmalaya
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 mt-3">
+                                <div class="card card-event p-3">
+                                    <div class="card-event-img"
+                                        style="background-image: url('src/assets/Event/nick-karvounis-8WODX7nO2JE-unsplash.jpg');">
+                                    </div>
+                                    <div class="card-body px-0">
+                                        <h4>Resepsi Nikah</h4>
+                                        <p class="body m-0">Rabu, 27 Januari 2021 pukul 15.00 - 16.00 WIB
+                                            <br>di Favehotel Tasikmalaya
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mt-5 text-center">
+                                <div style="padding-left: 10%; padding-right: 10%;">
+                                    <p class="body">Bapak/Ibu/Saudara/i tetap dapat menyaksikan acara pernikahan kami
+                                        secara
+                                        virtual melalui tautan berikut:</p>
+                                    <button class="button-main py-1 px-3">
+                                        <a href="#" target="_blank" class="w-100 h-100 p-0">
+                                            <img src="src/assets/Event/zoom-1.png">
+                                        </a>
+                                    </button>
+                                    <p class="body mt-3">Meeting ID: 124124124124
+                                        <br>Password: 124214
+                                    </p>
+                                    <p class="body mt-3">Teriring permohonan maaf kami dan ucapan Terima Kasih. Semoga
+                                        Bapak/Ibu/Saudara/i dapat memaklumi kondisi ini dan kita semua ada dalam keadaan
+                                        sehat.
+                                    </p>
+                                </div>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31685.480561673077!2d107.6335300913575!3d-6.928195880866351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e89dbe0ec231%3A0x177412aac90cd065!2sAlun-Alun%20Kota%20Bandung!5e0!3m2!1sen!2sid!4v1612092573651!5m2!1sen!2sid"
+                                    width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                                    aria-hidden="false" tabindex="0"></iframe>
+                                <button class="button-main mt-3 py-3 px-4">
+                                    <a href="https://g.page/alunalunbandung?share"
+                                        style="text-decoration:none;color : white;" target="_blank"
+                                        class="w-100 h-100 p-0">
+                                        Menuju Lokasi Pernikahan
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content -->
+                <div class="row">
+                    <div class="col">
+                        <img class="img-fluid flower" src="src/assets/Flower top left.png">
+                    </div>
+                    <div class="col align-content-end">
+                        <img class="img-fluid flower float-right" src="src/assets/Flower top right.png">
+                    </div>
+                </div>
+            </div>
+            <img class="img-fluid leaves mb-5 pb-3 m-auto" style="display: block;" src="src/assets/Footer_flower.svg">
+            <!-- When & Where -->
+
+            <!-- Gallery -->
+            <img class="img-fluid leaves mx-auto mt-5 pt-3" style="display: block;" src="src/assets/Header_flower.svg">
+            <div id="gallery" class="mx-auto my-4 px-3 py-3 main-container" style="display: block;">
+                <div class="row">
+                    <div class="col">
+                        <img class="img-fluid flower" src="src/assets/Flower top left.png">
+                    </div>
+                    <div class="col align-content-end">
+                        <img class="img-fluid flower float-right" src="src/assets/Flower top right.png">
+                    </div>
+                </div>
+                <!-- Content -->
+                <div class="row m-3">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <h1 class="text-center sunnday mb-0">Gallery</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div id="gallery-photos"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content -->
+                <div class="row">
+                    <div class="col">
+                        <img class="img-fluid flower" src="src/assets/Flower top left.png">
+                    </div>
+                    <div class="col align-content-end">
+                        <img class="img-fluid flower float-right" src="src/assets/Flower top right.png">
+                    </div>
+                </div>
+            </div>
+            <img class="img-fluid leaves mb-5 pb-3 m-auto" style="display: block;" src="src/assets/Footer_flower.svg">
+            <!-- Gallery -->
+
+            <!-- Story -->
+            <img class="img-fluid leaves mx-auto mt-5 pt-3" style="display: block;" src="src/assets/Header_flower.svg">
+            <div id="story" class="mx-auto my-4 main-container story" style="display: block;">
+                <div class="row">
+                    <div class="col">
+                        <img class="img-fluid flower" src="src/assets/Flower top left.png">
+                    </div>
+                    <div class="col align-content-end">
+                        <img class="img-fluid flower float-right" src="src/assets/Flower top right.png">
+                    </div>
+                </div>
+                <!-- Content -->
+                <div class="row m-3">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <h1 class="text-center sunnday mb-0">Our Story</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="body py-3 px-5 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Integer ultrices malesuada ante quis pharetra.
+                                    Nullam notn bibendum dolor. Ut vel turpis accumsan, efficitur dolor fermentum,
+                                    tincidunt metus.
+                                    Etiam ut ultrices nibh. Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar
+                                    congue ex, vitae</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="timeline">
+                                    <div class="container-timeline left">
+                                        <div class="content px-5 py-3">
+                                            <h4>WE FIRST MET</h4>
+                                            <p class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Integer ultrices malesuada ante quis pharetra. Nullam notn bibendum
+                                                dolor. Ut vel</p>
+                                        </div>
+                                    </div>
+                                    <div class="container-timeline right">
+                                        <div class="content px-5 py-3">
+                                            <h4>OUR FIRST DATING</h4>
+                                            <p class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Integer ultrices malesuada ante quis pharetra. Nullam notn bibendum
+                                                dolor. Ut vel</p>
+                                        </div>
+                                    </div>
+                                    <div class="container-timeline left">
+                                        <div class="content px-5 py-3">
+                                            <h4>HE PROPOSED</h4>
+                                            <p class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Integer ultrices malesuada ante quis pharetra. Nullam notn bibendum
+                                                dolor. Ut vel</p>
+                                        </div>
+                                    </div>
+                                    <div class="container-timeline right">
+                                        <div class="content px-5 py-3">
+                                            <h4>LOVE RING</h4>
+                                            <p class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Integer ultrices malesuada ante quis pharetra. Nullam notn bibendum
+                                                dolor. Ut vel</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col px-5 pt-3 pb-3 mb-3">
+                                <h4 class="text-center">AND TODAY... WE ARE GETTING MARRIED</h4>
+                            </div>
+                        </div>
+                        <div class="row transfer">
+                            <div class="col py-3">
+                                <p class="body text-center mt-3">Bagi Bapak/Ibu/Saudara/i
+                                    apabila ingin memberikan virtual gift kepada pengantin, dapat melalui nomor rekening
+                                    berikut:
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row transfer">
+                            <div class="col-6 col-lg-4 m-auto">
+                                <img src="src/assets/wish/bri.png" class="img-fluid img-transfer">
+                                <p class="box-text" style="text-align: center; margin-bottom: 0px;">BRI: XXXXXXX<br>A.n.
+                                    Mempelai</p>
+                            </div>
+                            <div class="col-6 col-lg-4 m-auto">
+                                <img src="src/assets/wish/bca.png" class="img-fluid img-transfer">
+                                <p class="box-text" style="text-align: center; margin-bottom: 0px;">BCA: XXXXXXX<br>A.n.
+                                    Mempelai</p>
+                            </div>
+                            <div class="col-6 col-lg-4 m-auto">
+                                <img src="src/assets/wish/gopay.png" class="img-fluid img-transfer">
+                                <p class="box-text" style="text-align: center; margin-bottom: 0px;">GOPAY:
+                                    XXXXXXX<br>A.n. Mempelai</p>
+                            </div>
+                        </div>
+                        <div class="row transfer pb-4 mb-5">
+                            <div class="col">
+                                <p class="body text-center mt-3">Kami ucapkan terima kasih
+                                    sebesar mungkin kepada Bapak/Ibu/Saudara/i
+                                    atas dukungan dan doa yang diberikan kepada kami.</p>
+                            </div>
+                        </div>
+                        <div class="row mt-5 pt-4">
+                            <div class="col">
+                                <h2 class="text-center">Wish Us</h2>
+                                <p class="body text-center">Kami tunggu ucapan dan doa dari keluarga dan teman-teman
+                                    kami tercinta.</p>
+                            </div>
+                        </div>
+
+                        <div class="row wish-container">
+                            <div class="col-sm-5 send-wish">
+                                <form class="">
+                                    <div class="row py-4">
+                                        <div class="col">
+                                            <input id="nama" class="form-control" type="text" placeholder="Nama"
+                                                style="border: 1px solid #FCB2A9;">
+                                        </div>
+                                    </div>
+                                    <div class="row pb-4">
+                                        <div class="col">
+                                            <select class="form-control" id="kerabat"
+                                                style="border: 1px solid #FCB2A9;">
+                                                <option selected disabled value="">Kerabat dari</option>
+                                                <option>Pria</option>
+                                                <option>Wanita</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row pb-4">
+                                        <div class="col">
+                                            <textarea id="pesana" class="form-control" placeholder="Pesan" maxlength="600"
+                                                style="height: 200px; border: 1px solid #FCB2A9;"></textarea><br>
+                                        </div>
+                                    </div>
+                                    <div class="row pb-5">
+                                        <div class="col">
+                                            <input type="button" class="button-main p-2" style="min-width: 100%;"
+                                                onclick="postPesan()" value="Kirim Pesan">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-sm-7 pesan-container">
+                                <div class="pb-3 px-3 pt-0 pesan pesan-container-dalam" id="pesan">
+                                    <div class="row mt-3 mr-2">
+                                        <div style="width: 40px; display:inline">
+                                            <img class="ml-auto" src="src/assets/wish/ava_wish.svg">
+                                        </div>
+                                        <div class="pl-2" style="width: calc(100% - 42px); display:inline-block;">
+                                            <div class="pr-2">
+                                                <span class="body">Nama Pengirim - </span><span class="body"><b>Kerabat
+                                                        Pria</b></span>
+                                            </div>
+                                            <div class="mt-1 p-2"
+                                                style="width:100%; background: #FFFFFF; border: 1px solid #FCB2A9;border-radius: 8px;">
+                                                <p class="body mb-0">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod. Dolor sit amet lorem ipsum
+                                                    dolor sit amet lorem ipsum.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 mr-2">
+                                        <div style="width: 40px; display:inline">
+                                            <img class="ml-auto" src="src/assets/wish/ava_wish.svg">
+                                        </div>
+                                        <div class="pl-2" style="width: calc(100% - 42px);  ;display:inline-block;">
+                                            <div class="pr-2">
+                                                <span class="body">Nama Pengirim - </span><span class="body"><b>Kerabat
+                                                        Pria</b></span>
+                                            </div>
+                                            <div class="mt-1 p-2"
+                                                style="width:100%; background: #FFFFFF; border: 1px solid #FCB2A9;border-radius: 8px;">
+                                                <p class="body mb-0">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod. Dolor sit amet lorem ipsum
+                                                    dolor sit amet lorem ipsum.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 mr-2">
+                                        <div style="width: 40px; display:inline">
+                                            <img class="ml-auto" src="src/assets/wish/ava_wish.svg">
+                                        </div>
+                                        <div class="pl-2" style="width: calc(100% - 42px);  ;display:inline-block;">
+                                            <div class="pr-2">
+                                                <span class="body">Nama Pengirim - </span><span class="body"><b>Kerabat
+                                                        Pria</b></span>
+                                            </div>
+                                            <div class="mt-1 p-2"
+                                                style="width:100%; background: #FFFFFF; border: 1px solid #FCB2A9;border-radius: 8px;">
+                                                <p class="body mb-0">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod. Dolor sit amet lorem ipsum
+                                                    dolor sit amet lorem ipsum.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 mr-2">
+                                        <div style="width: 40px; display:inline">
+                                            <img class="ml-auto" src="src/assets/wish/ava_wish.svg">
+                                        </div>
+                                        <div class="pl-2" style="width: calc(100% - 42px);  ;display:inline-block;">
+                                            <div class="pr-2">
+                                                <span class="body">Nama Pengirim - </span><span class="body"><b>Kerabat
+                                                        Pria</b></span>
+                                            </div>
+                                            <div class="mt-1 p-2"
+                                                style="width:100%; background: #FFFFFF; border: 1px solid #FCB2A9;border-radius: 8px;">
+                                                <p class="body mb-0">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod. Dolor sit amet lorem ipsum
+                                                    dolor sit amet lorem ipsum.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Content -->
+                <div class="row">
+                    <div class="col">
+                        <img class="img-fluid flower" src="src/assets/Flower top left.png">
+                    </div>
+                    <div class="col align-content-end">
+                        <img class="img-fluid flower float-right" src="src/assets/Flower top right.png">
+                    </div>
+                </div>
+            </div>
+            <img class="img-fluid leaves mb-5 pb-3 m-auto" style="display: block;" src="src/assets/Footer_flower.svg">
+            <!-- Story -->
+        </div>
+    </div>
+    <!-- Main Content -->
+
+    <script src="src/js/image-links.js"></script>
+    <script src="src/js/script.js"></script>
+    <script src="api.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="src/js/bootstrap.min.js"></script>
+    <script src="src/js/lightbox-plus-jquery.js"></script>
+</body>
+
+</html>

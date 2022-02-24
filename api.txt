@@ -1,0 +1,11 @@
+Konfigurasi database untuk ucapan:
+Nama Database : Wedding
+Nama Tabel : Ucapan
+Isi tabel: id (primary key, auto increment), nama (varchar), kerabat (varchar), ucapan (text)
+
+Untuk pengetesan API secara lokal, gunakan XAMPP dan letakan folder API di dalam Htdocs.
+Ubah konfigurasi pada conn.php sesuai dengan pengaturan database.
+Jika perlu, ubah web_url dalam api.js sesuai dengan URL API dalam XAMPP. 
+(Untuk setting XAMPP default tidak perlu ada perubahan)
+
+Jika website sudah dihosting, ubah web_url dalam api.js menjadi "./api/"

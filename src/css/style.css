@@ -1,0 +1,483 @@
+@font-face {
+  font-family: 'Nanum Pen';
+  src: url('fonts/NanumPenScript.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Sunnday';
+  src: url('fonts/Sunnday.ttf')  format('truetype');
+}
+
+.nanum {
+  font-family: 'Nanum Pen';
+}
+.sunnday {
+  font-family: 'Sunnday';
+}
+.manrope {
+  font-family: 'Manrope';
+}
+.playfair {
+  font-family: 'Playfair Display';
+}
+h4 {
+  font-family: 'Playfair Display';
+  font-size: 28px;
+}
+.body {
+  font-family: 'Manrope';
+  font-size: 16px;
+}
+
+.home{
+  display: block;
+  overflow: hidden;
+  border: transparent;
+  position: relative;
+}
+
+.home-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(180deg, rgba(255, 214, 209, 0) 0%, rgba(255, 214, 209, 0.5) 75%);
+}
+
+.home-text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 60%;
+}
+
+.ava-couple {
+  height: 270px; 
+  width: 270px; 
+  background-position: center; 
+  border-radius: 800px;
+}
+
+.main {
+  background-image: url('../assets/bgatexture1.png');
+  background-size: auto;
+  height: 100%;
+  width: 100%;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: calc(1% + 78px);
+}
+
+.bg-first {
+  background-image: url("../assets/first1.png");
+  height: 100%;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 6%;
+  padding-bottom: calc(6% + 78px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-first-1 {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 38px;
+  width: 100%;
+  height: 100%;
+}
+
+.button-main {
+  background: #FCB2A9;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+  outline:0 !important; 
+}
+.button-main:hover {
+  background: #ffc4bd;
+  outline:0 !important; 
+}
+.button-main:focus {
+  outline:0 !important;  
+  border: 0;
+}
+
+*:focus {
+  outline: 0 !important;
+}
+
+.button-modal {
+  background: #FCB2A9;
+  border-radius: 8px;
+  width: 198px;
+  height: 62px;
+  border: none;
+  text-align: center;
+  margin: 0 auto;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+}
+
+.button-modal:hover {
+  background: #ffc4bd;
+}
+
+h2 {
+  font-family: 'Sunnday';
+  font-size: 48px;
+}
+
+.img-transfer {
+	max-height: 65px;
+	max-width: 128px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.transfer{
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+.nav-width {
+  max-width: 786px;
+}
+
+.nav-logo {
+  max-width: 36px;
+}
+
+.navlink {
+  color: black;
+  font-family: 'Manrope';
+}
+
+.navlink:hover {
+  color: #ff3219;
+  text-decoration: none;
+}
+
+.navlink:focus {
+  color: #ff523d;
+}
+
+.modalh {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Pesan */
+.pesan-container {
+  background: #FFF7F6;
+  border: 1px solid #FCB2A9;
+  padding: 1em 0.25em 1em 1em;
+}
+
+.pesan-container-dalam {
+  overflow-y: scroll;
+  max-height: 500px;
+  scrollbar-width: thin;
+  scrollbar-color:#ff998c #ffe8e6;
+}
+
+.pesan-container-dalam::-webkit-scrollbar {
+  width: 4px; 
+}
+
+.pesan-container-dalam::-webkit-scrollbar-track {
+  background: #ffe8e6;        /* color of the tracking area */
+}
+
+.pesan-container-dalam::-webkit-scrollbar-thumb {
+  background-color: #ff998c;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
+/* Pesan */
+
+@keyframes fade-out {
+  from {top: 0; opacity: 1}
+
+  to {top: -300px; opacity: 0}
+}
+
+.animate-fade {
+  animation: fade-out 0.8s;
+  animation-fill-mode: forwards;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+.main-container {
+  background-image: url('../assets/bg-in.png');
+  background-size: 100%;
+  border: 4px solid #FCB2A9;
+  border-radius: 40px;
+}
+
+.card-event {
+  box-shadow: 0px 15px 30px rgba(252, 178, 169, 0.2);
+  border-radius: 20px;
+  border: transparent;
+}
+
+.card-event-img {
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+
+.rowh {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  background-color: #FCB2A9;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container-timeline {
+  position: relative;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container-timeline::after {
+  content: '';
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  right: -19px;
+  background-color: #FCB2A9;
+  top: 50%;
+  border-radius: 50%;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -22px;
+}
+
+.wish-container {
+  min-width: 100%;
+  border-radius: 20px;
+  background-color: white;
+  padding: 3em;
+}
+
+.send-wish {
+  padding: 1em 1.25em 0 1em
+}
+
+/* The actual content */
+.content {
+  position: relative;
+  border-radius: 6px;
+}
+
+.text-ava{
+  margin-top: 0.25em;
+}
+
+.story{
+  padding: 1em;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 992px) {
+  .countdown-container {
+    width: 55%;
+  }
+}
+
+@media (max-width: 786px) {
+  .story{
+    padding:0;
+  }
+
+  .send-wish {
+    padding: 0;
+  }
+
+  .send-wish .col {
+    padding: 0 0.75em;
+  }
+  
+  .wish-container{
+    padding:1em;
+  }
+
+  .countdown-container {
+    width: 75%;
+  }
+
+  .countdown-container h1 {
+    font-size: 52px;
+  }
+
+  .ava-wanita {
+    margin-top: 3em;
+  }
+
+  .text-ava{
+    margin-top: 1em;
+  }
+
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .home-text {
+    top: 40%;
+  }
+}
+
+@media (max-width: 576px) {
+  .countdown-container {
+    width: 100%;
+  }
+
+  .countdown-container h1 {
+    font-size: 42px;
+  }
+
+  .transfer{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+    width: 100%;
+  }
+
+  .container-timeline {
+    width: 100%;
+  }
+
+  .container-timeline::after {
+    top: 1em;
+    width: 28px;
+    height: 28px;
+  }
+  
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+  h1 {
+    font-size: 56px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+
+  .button-modal {
+    height: 56px;
+    width: 156px;
+  }
+  .bg-first {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 3%;
+    padding-bottom: calc(3% + 78px);
+  }
+
+  .home-text {
+    top: 45%;
+  }
+
+  .main-container {
+    border-radius: 20px;
+    border: 2px solid #FCB2A9;
+  }
+  
+  .flower{
+    max-width: 75px;
+  }
+
+  .leaves{
+    max-width: 200px;
+  }
+
+  .card-event-img {
+    max-height: 124px;
+  }
+
+}
